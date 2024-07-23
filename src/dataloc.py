@@ -6,3 +6,8 @@
 # set -> directory_path = "/path/to/geological_docs"
 
 directory_path = "/geological_docs"  # Replace this with the location of your geological surveys
+
+# Note:
+# - Ensure the path is a string and properly formatted based on your operating system.
+# - For Unix-based systems (Linux, macOS) ->    Use '/'.
+# - For Windows ->                              Use '\\' or raw strings (r"path\to\geological_documents").
