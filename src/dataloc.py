@@ -5,7 +5,7 @@
 # For example, if your documents are located at "/path/to/geological_docs",
 # set -> directory_path = "/path/to/geological_docs"
 
-directory_path = "/geological_docs"  # Replace this with the location of your geological surveys
+directory_path = r"..\..\wamex\data"  # Replace this with the location of your geological surveys
 
 # Note:
 # - Ensure the path is a string and properly formatted based on your operating system.
