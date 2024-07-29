@@ -330,7 +330,7 @@ euro
 Ewington
 exmouth
 Extension Hill
-Extension Hill�mine
+Extension Hill mine
 Ferguson reef
 Ferguson valley
 feysville
@@ -886,7 +886,7 @@ Radium Hill
 Raleigh
 Randalls Gold Mine
 ranford
-Rangelands�
+Rangelands 
 Ranger Uranium Mine
 ravensthorpe
 Ravensthorpe Nickel Mine
@@ -1142,38 +1142,3 @@ yundamindera
 yunderup
 yunndaga
 zanthus
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
