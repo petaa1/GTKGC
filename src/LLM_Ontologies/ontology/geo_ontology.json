@@ -1,0 +1,96 @@
+{
+    "title": "GeologicalSurveys Ontology",
+    "id": "ont_geologicalsurveys",
+    "concepts": [
+      {
+        "qid": "GeologicalTimescale",
+        "label": "GeologicalTimescale"
+      },
+      {
+        "qid": "Location",
+        "label": "Location"
+      },
+      {
+        "qid": "Mineral",
+        "label": "Mineral"
+      },
+      {
+        "qid": "OreDeposit",
+        "label": "OreDeposit"
+      },
+      {
+        "qid": "Rock",
+        "label": "Rock"
+      },
+      {
+        "qid": "Stratigraphy",
+        "label": "Stratigraphy"
+      },
+      {
+        "qid": "Date",
+        "label": "Date"
+      }
+    ],
+    "relations": [
+      {
+        "pid": "timescale",
+        "label": "timescale",
+        "domain": "Rock",
+        "range": "GeologicalTimescale"
+      },
+      {
+        "pid": "location",
+        "label": "location",
+        "domain": "Rock",
+        "range": "Location"
+      },
+      {
+        "pid": "contains",
+        "label": "contains",
+        "domain": "Rock",
+        "range": "Mineral"
+      },
+      {
+        "pid": "contains",
+        "label": "contains",
+        "domain": "Mineral",
+        "range": "OreDeposit"
+      },
+      {
+        "pid": "belongsTo",
+        "label": "belongsTo",
+        "domain": "Stratigraphy",
+        "range": "Rock"
+      },
+      {
+        "pid": "foundIn",
+        "label": "foundIn",
+        "domain": "Rock",
+        "range": "Location"
+      },
+      {
+        "pid": "foundIn",
+        "label": "foundIn",
+        "domain": "Mineral",
+        "range": "Location"
+      },
+      {
+        "pid": "foundAt",
+        "label": "foundAt",
+        "domain": "Rock",
+        "range": "Date"
+      },
+      {
+        "pid": "foundAt",
+        "label": "foundAt",
+        "domain": "Mineral",
+        "range": "Date"
+      },
+      {
+        "pid": "foundAt",
+        "label": "foundAt",
+        "domain": "OreDeposit",
+        "range": "Date"
+      }
+    ]
+  } 
