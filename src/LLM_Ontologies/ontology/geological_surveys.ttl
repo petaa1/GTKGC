@@ -1,0 +1,47 @@
+@prefix ex: <http://www.example.org/ontologies/geologicalsurveys#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:belongsTo a owl:ObjectProperty ;
+    rdfs:domain ex:Stratigraphy ;
+    rdfs:range ex:Rock .
+
+ex:contains a owl:ObjectProperty ;
+    rdfs:domain ex:Mineral,
+        ex:Rock ;
+    rdfs:range ex:Mineral,
+        ex:OreDeposit .
+
+ex:foundAt a owl:ObjectProperty ;
+    rdfs:domain ex:Mineral,
+        ex:OreDeposit,
+        ex:Rock ;
+    rdfs:range ex:Date .
+
+ex:foundIn a owl:ObjectProperty ;
+    rdfs:domain ex:Mineral,
+        ex:Rock ;
+    rdfs:range ex:Location .
+
+ex:location a owl:ObjectProperty ;
+    rdfs:domain ex:Rock ;
+    rdfs:range ex:Location .
+
+ex:timescale a owl:ObjectProperty ;
+    rdfs:domain ex:Rock ;
+    rdfs:range ex:GeologicalTimescale .
+
+ex:Date a owl:Class .
+
+ex:GeologicalTimescale a owl:Class .
+
+ex:Stratigraphy a owl:Class .
+
+ex:Location a owl:Class .
+
+ex:OreDeposit a owl:Class .
+
+ex:Mineral a owl:Class .
+
+ex:Rock a owl:Class .
+
