@@ -1,62 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
->
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#belongsTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Stratigraphy"/>
-    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundIn">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
-    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Location"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#GeologicalTimescale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#location">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
-    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Location"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundAt">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#OreDeposit"/>
-    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Date"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#contains">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
-    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
-    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
-    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#OreDeposit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#Mineral">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#Stratigraphy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#Rock">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#timescale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <!-- Ontology Declaration -->
+  <owl:Ontology rdf:about="http://www.example.org/ontologies/geologicalsurveys"/>
+  
+  <!-- Classes -->
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#GeologicalTimescale"/>
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#Location"/>
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#OreDeposit"/>
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#Stratigraphy"/>
+  <owl:Class rdf:about="http://www.example.org/ontologies/geologicalsurveys#Date"/>
+
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#timescale">
     <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
     <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#GeologicalTimescale"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#Location">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#Date">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.example.org/ontologies/geologicalsurveys#OreDeposit">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#location">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Location"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#contains">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#contains">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#OreDeposit"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#belongsTo">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Stratigraphy"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundIn">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Location"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundIn">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Location"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundAt">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Rock"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Date"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundAt">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Mineral"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Date"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.example.org/ontologies/geologicalsurveys#foundAt">
+    <rdfs:domain rdf:resource="http://www.example.org/ontologies/geologicalsurveys#OreDeposit"/>
+    <rdfs:range rdf:resource="http://www.example.org/ontologies/geologicalsurveys#Date"/>
+  </owl:ObjectProperty>
+
 </rdf:RDF>
