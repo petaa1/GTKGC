@@ -1,96 +1,180 @@
 {
-    "title": "GeologicalSurveys Ontology",
-    "id": "ont_geologicalsurveys",
-    "concepts": [
-      {
-        "qid": "GeologicalTimescale",
-        "label": "GeologicalTimescale"
-      },
-      {
-        "qid": "Location",
-        "label": "Location"
-      },
-      {
-        "qid": "Mineral",
-        "label": "Mineral"
-      },
-      {
-        "qid": "OreDeposit",
-        "label": "OreDeposit"
-      },
-      {
-        "qid": "Rock",
-        "label": "Rock"
-      },
-      {
-        "qid": "Stratigraphy",
-        "label": "Stratigraphy"
-      },
-      {
-        "qid": "Date",
-        "label": "Date"
-      }
-    ],
-    "relations": [
-      {
-        "pid": "timescale",
-        "label": "timescale",
-        "domain": "Rock",
-        "range": "GeologicalTimescale"
-      },
-      {
-        "pid": "location",
-        "label": "location",
-        "domain": "Rock",
-        "range": "Location"
-      },
-      {
-        "pid": "contains",
-        "label": "contains",
-        "domain": "Rock",
-        "range": "Mineral"
-      },
-      {
-        "pid": "contains",
-        "label": "contains",
-        "domain": "Mineral",
-        "range": "OreDeposit"
-      },
-      {
-        "pid": "belongsTo",
-        "label": "belongsTo",
-        "domain": "Stratigraphy",
-        "range": "Rock"
-      },
-      {
-        "pid": "foundIn",
-        "label": "foundIn",
-        "domain": "Rock",
-        "range": "Location"
-      },
-      {
-        "pid": "foundIn",
-        "label": "foundIn",
-        "domain": "Mineral",
-        "range": "Location"
-      },
-      {
-        "pid": "foundAt",
-        "label": "foundAt",
-        "domain": "Rock",
-        "range": "Date"
-      },
-      {
-        "pid": "foundAt",
-        "label": "foundAt",
-        "domain": "Mineral",
-        "range": "Date"
-      },
-      {
-        "pid": "foundAt",
-        "label": "foundAt",
-        "domain": "OreDeposit",
-        "range": "Date"
-      }
-    ]
-  } 
+  "title": "GeologicalSurveys Ontology",
+  "id": "ont_geologicalsurveys",
+  "concepts": [
+    {
+      "qid": "GeologicalTimescale",
+      "label": "GeologicalTimescale"
+    },
+    {
+      "qid": "Location",
+      "label": "Location"
+    },
+    {
+      "qid": "Mineral",
+      "label": "Mineral"
+    },
+    {
+      "qid": "OreDeposit",
+      "label": "OreDeposit"
+    },
+    {
+      "qid": "Rock",
+      "label": "Rock"
+    },
+    {
+      "qid": "Stratigraphy",
+      "label": "Stratigraphy"
+    },
+    {
+      "qid": "Date",
+      "label": "Date"
+    }
+  ],
+  "relations": [
+    {
+      "pid": "contains",
+      "label": "contains",
+      "domain": "Rock",
+      "range": "Mineral"
+    },
+    {
+      "pid": "contains",
+      "label": "contains",
+      "domain": "Mineral",
+      "range": "OreDeposit"
+    },
+    {
+      "pid": "belongsTo",
+      "label": "belongsTo",
+      "domain": "Stratigraphy",
+      "range": "Rock"
+    },
+    {
+      "pid": "foundIn",
+      "label": "foundIn",
+      "domain": "Rock",
+      "range": "Location"
+    },
+    {
+      "pid": "foundIn",
+      "label": "foundIn",
+      "domain": "Mineral",
+      "range": "Location"
+    },
+    {
+      "pid": "foundAt",
+      "label": "foundAt",
+      "domain": "Rock",
+      "range": "Date"
+    },
+    {
+      "pid": "foundAt",
+      "label": "foundAt",
+      "domain": "Mineral",
+      "range": "Date"
+    },
+    {
+      "pid": "foundAt",
+      "label": "foundAt",
+      "domain": "OreDeposit",
+      "range": "Date"
+    },
+    {
+      "pid": "formedDuring",
+      "label": "formedDuring",
+      "domain": "Rock",
+      "range": "GeologicalTimescale"
+    },
+    {
+      "pid": "discoveredBy",
+      "label": "discoveredBy",
+      "domain": "Rock",
+      "range": "Person"
+    },
+    {
+      "pid": "discoveredBy",
+      "label": "discoveredBy",
+      "domain": "Mineral",
+      "range": "Person"
+    },
+    {
+      "pid": "discoveredBy",
+      "label": "discoveredBy",
+      "domain": "OreDeposit",
+      "range": "Person"
+    },
+    {
+      "pid": "associatedWith",
+      "label": "associatedWith",
+      "domain": "Rock",
+      "range": "GeologicalEvent"
+    },
+    {
+      "pid": "occursIn",
+      "label": "occursIn",
+      "domain": "Mineral",
+      "range": "Rock"
+    },
+    {
+      "pid": "occursIn",
+      "label": "occursIn",
+      "domain": "OreDeposit",
+      "range": "Rock"
+    },
+    {
+      "pid": "isPartOf",
+      "label": "isPartOf",
+      "domain": "Stratigraphy",
+      "range": "Stratigraphy"
+    },
+    {
+      "pid": "extractedFrom",
+      "label": "extractedFrom",
+      "domain": "OreDeposit",
+      "range": "Location"
+    },
+    {
+      "pid": "alteredBy",
+      "label": "alteredBy",
+      "domain": "Rock",
+      "range": "GeologicalProcess"
+    },
+    {
+      "pid": "relatedTo",
+      "label": "relatedTo",
+      "domain": "Mineral",
+      "range": "GeologicalFormation"
+    },
+    {
+      "pid": "relatedTo",
+      "label": "relatedTo",
+      "domain": "OreDeposit",
+      "range": "GeologicalFormation"
+    },
+    {
+      "pid": "underlies",
+      "label": "underlies",
+      "domain": "Stratigraphy",
+      "range": "Stratigraphy"
+    },
+    {
+      "pid": "overlies",
+      "label": "overlies",
+      "domain": "Stratigraphy",
+      "range": "Stratigraphy"
+    },
+    {
+      "pid": "hasAge",
+      "label": "hasAge",
+      "domain": "Rock",
+      "range": "GeologicalTimescale"
+    },
+    {
+      "pid": "hasAge",
+      "label": "hasAge",
+      "domain": "Stratigraphy",
+      "range": "GeologicalTimescale"
+    }
+  ]
+}
