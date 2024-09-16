@@ -87,18 +87,6 @@
       "range": "Date"
     },
     {
-      "pid": "occursIn",
-      "label": "occursIn",
-      "domain": "Mineral",
-      "range": "Rock"
-    },
-    {
-      "pid": "occursIn",
-      "label": "occursIn",
-      "domain": "OreDeposit",
-      "range": "Rock"
-    },
-    {
       "pid": "isPartOf",
       "label": "isPartOf",
       "domain": "Stratigraphy",
@@ -125,12 +113,24 @@
     {
       "pid": "hasAge",
       "label": "hasAge",
+      "domain": "Mineral",
+      "range": "GeologicalTimescale"
+    },
+    {
+      "pid": "hasAge",
+      "label": "hasAge",
+      "domain": "OreDeposit",
+      "range": "GeologicalTimescale"
+    },
+    {
+      "pid": "hasAge",
+      "label": "hasAge",
       "domain": "Stratigraphy",
       "range": "GeologicalTimescale"
     },
     {
-      "pid": "isNear",
-      "label": "isNear",
+      "pid": "locatedIn",
+      "label": "LocatedIn",
       "domain": "Location",
       "range": "Location"
     }
