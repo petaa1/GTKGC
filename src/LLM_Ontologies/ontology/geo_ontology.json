@@ -63,6 +63,12 @@
       "range": "Location"
     },
     {
+      "pid": "foundIn",
+      "label": "foundIn",
+      "domain": "OreDeposit",
+      "range": "Location"
+    },
+    {
       "pid": "foundAt",
       "label": "foundAt",
       "domain": "Rock",
@@ -79,36 +85,6 @@
       "label": "foundAt",
       "domain": "OreDeposit",
       "range": "Date"
-    },
-    {
-      "pid": "formedDuring",
-      "label": "formedDuring",
-      "domain": "Rock",
-      "range": "GeologicalTimescale"
-    },
-    {
-      "pid": "discoveredBy",
-      "label": "discoveredBy",
-      "domain": "Rock",
-      "range": "Person"
-    },
-    {
-      "pid": "discoveredBy",
-      "label": "discoveredBy",
-      "domain": "Mineral",
-      "range": "Person"
-    },
-    {
-      "pid": "discoveredBy",
-      "label": "discoveredBy",
-      "domain": "OreDeposit",
-      "range": "Person"
-    },
-    {
-      "pid": "associatedWith",
-      "label": "associatedWith",
-      "domain": "Rock",
-      "range": "GeologicalEvent"
     },
     {
       "pid": "occursIn",
@@ -127,30 +103,6 @@
       "label": "isPartOf",
       "domain": "Stratigraphy",
       "range": "Stratigraphy"
-    },
-    {
-      "pid": "extractedFrom",
-      "label": "extractedFrom",
-      "domain": "OreDeposit",
-      "range": "Location"
-    },
-    {
-      "pid": "alteredBy",
-      "label": "alteredBy",
-      "domain": "Rock",
-      "range": "GeologicalProcess"
-    },
-    {
-      "pid": "relatedTo",
-      "label": "relatedTo",
-      "domain": "Mineral",
-      "range": "GeologicalFormation"
-    },
-    {
-      "pid": "relatedTo",
-      "label": "relatedTo",
-      "domain": "OreDeposit",
-      "range": "GeologicalFormation"
     },
     {
       "pid": "underlies",
@@ -175,6 +127,12 @@
       "label": "hasAge",
       "domain": "Stratigraphy",
       "range": "GeologicalTimescale"
+    },
+    {
+      "pid": "isNear",
+      "label": "isNear",
+      "domain": "Location",
+      "range": "Location"
     }
   ]
 }
