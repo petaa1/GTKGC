@@ -45,8 +45,8 @@
       "range": "OreDeposit"
     },
     {
-      "pid": "belongsTo",
-      "label": "belongsTo",
+      "pid": "contains",
+      "label": "contains",
       "domain": "Stratigraphy",
       "range": "Rock"
     },
@@ -66,6 +66,12 @@
       "pid": "foundIn",
       "label": "foundIn",
       "domain": "OreDeposit",
+      "range": "Location"
+    },
+    {
+      "pid": "foundIn",
+      "label": "foundIn",
+      "domain": "Stratigraphy",
       "range": "Location"
     },
     {
@@ -131,6 +137,12 @@
     {
       "pid": "locatedIn",
       "label": "LocatedIn",
+      "domain": "Location",
+      "range": "Location"
+    },
+    {
+      "pid": "locatedNear",
+      "label": "locatedNear",
       "domain": "Location",
       "range": "Location"
     }
