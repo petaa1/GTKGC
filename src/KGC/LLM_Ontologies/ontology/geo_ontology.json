@@ -51,6 +51,12 @@
       "range": "Rock"
     },
     {
+      "pid": "contains",
+      "label": "contains",
+      "domain": "Rock",
+      "range": "Rock"
+    },
+    {
       "pid": "foundIn",
       "label": "foundIn",
       "domain": "Rock",
