@@ -41,7 +41,7 @@ The main Jupyter notebooks in this repository are the various stages to construc
 ### 1. [`6-GeoEntity_NER_Model.ipynb`](https://github.com/petaa1/GTKGC/blob/main/src/NER/6-GeoEntity_NER_Model.ipynb)
 
 - **Description**: Fine-tunes a T5 model for recognising geological entities. The model is trained to identify six main entity types: Rock, Mineral, Ore Deposit, Stratigraphy, Location, and Geological Timescale.
-- **Training Data**: The NER model was trained using data sourced from the article **"Auto-labelling entities in low-resource text: a geological case study"** by [Enkhsaikhan et al. (2021)](https://doi.org/10.1007/s10115-020-01532-6). This dataset consists of geological information extracted from WAMEX reports. Additionally, the domain dictionary labels used in this project were also obtained from the same paper.
+- **Training Data**: The NER model was trained using data sourced from the article **"Auto-labelling entities in low-resource text: a geological case study"** by [Enkhsaikhan et al. (2021)](https://doi.org/10.1007/s10115-020-01532-6). This dataset consists of geological information extracted from WAMEX reports. Additionally, the domain dictionary file were also obtained from the same paper.
 
 
 ### 2. [`Combined_NER.ipynb`](https://github.com/petaa1/GTKGC/blob/main/src/NER/Combined_NER.ipynb)
